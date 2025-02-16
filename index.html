@@ -30,9 +30,17 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&display=swap"
+    rel="stylesheet">
+
 </head>
 
-<body class="index-page">
+<body class="index-page fs-4" style="font-family: Chakra Petch, serif">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -48,7 +56,7 @@
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Students</a></li>
+          <li><a href="#students">Students</a></li>
           <li><a href="#team">Team</a></li>
           <!-- <li><a href="blog.html">Blog</a></li> -->
           <li class="dropdown"><a href="#"><span>Administration</span> <i
@@ -83,9 +91,10 @@
       <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('assets/img/hero/h1.jpg'); background-size: cover; background-position: center;">
+        <div class="carousel-item active"
+          style="background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('/assets/img/hero/h1.jpg'); background-size: cover; background-position: center;">
           <div class="carousel-container">
-            <h3 class="animate__animated animate__fadeInDown">Recognised by 
+            <h3 class="animate__animated animate__fadeInDown">Recognised by
               Kalpajyoti Foundation</h3>
             <h2 class="animate__animated animate__fadeInDown">OFF CAMPUS EDUCATION</h2>
             <p class="animate__animated animate__fadeInUp">An In-home tutoring service</p>
@@ -95,7 +104,8 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item active" style="background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('assets/img/hero/h2.jpg'); background-size: cover; background-position: center;">
+        <div class="carousel-item active"
+          style="background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('/assets/img/hero/h2.jpg'); background-size: cover; background-position: center;">
           <div class="carousel-container">
             <h3 class="animate__animated animate__fadeInDown">OUR STUDENT OUR RESPONSIBILITY</h3>
             <h2 class="animate__animated animate__fadeInDown">OFF CAMPUS EDUCATION</h2>
@@ -149,7 +159,7 @@
     <!-- book now -->
     <div class="container">
       <div class="row text-success mt-5">
-        <div class="col-lg-6">
+        <div class="col-lg-6 my-auto">
           <h2 class="h2 fw-bolder">
             Here you will get best
             Home Tutor of your Town.
@@ -162,8 +172,8 @@
             <button class="btn fs-2 bg-black text-white mx-auto">Book Now</button>
           </div>
         </div>
-        <div class="col-lg-6">
-
+        <div class="col-sm-2">
+          <img src="assets/img/hero -2 bg.png" alt="" height="400" width="400">
         </div>
       </div>
     </div>
@@ -173,31 +183,19 @@
     <section id="about" class="about section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 class="text-danger">About</h2>
-        <p class="text-danger">Who we are</p>
+      <div class="container title text-center mx-auto mb-5" data-aos="fade-up">
+        <h2 class="text-danger fw-bolder"></h2>
       </div><!-- End Section Title -->
-
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-
             <p>
-
+              <img src="assets/img/logo.jpg" alt="" height="400" width="400">
             </p>
-            <!-- <ul>
-              <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
-                  velit.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo</span></li>
-            </ul> -->
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h2 class="h2 fw-bolder text-danger">OFF CAMPUS EDUCATION</h2>
+            <h2 class="h2 fw-bolder text-danger fs-1">ABOUT <br> OFF CAMPUS EDUCATION</h2>
             <p>Established in 2022, OFF CAMPUS EDUCATION is an In-home
               tutoring service which strives to develop a pedagogical
               structure, accessible for students of all sections of society,
@@ -208,13 +206,10 @@
               <br>
               <span class="fw-bolder">Founder – Paramjit Roy.</span>
             </p>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            <a href="#" class=""><span>Read More</span><i class="bi bi-arrow-right"></i></a>
           </div>
-
         </div>
-
       </div>
-
     </section><!-- /About Section -->
 
     <!-- Features Section -->
@@ -393,9 +388,7 @@
 
     <!-- Call To Action Section -->
     <!-- <section id="call-to-action" class="call-to-action section dark-background">
-
       <div class="container">
-
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-9 text-center text-xl-start">
             <h3>Call To Action</h3>
@@ -407,201 +400,287 @@
             <a class="cta-btn align-middle" href="#">Call To Action</a>
           </div>
         </div>
-
       </div>
-
     </section> -->
     <!-- /Call To Action Section -->
 
     <!-- Services Section -->
     <section id="services" class="services section">
-
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 class="text-danger">Facilitis</h2>
-        <p class="text-danger">What we do offer</p>
-      </div><!-- End Section Title -->
-
-
-
-
+      <div class="container title" data-aos="fade-up">
+        <h2 class="text-danger fw-bolder fs-1 mb-5">Our Facilitis</h2>
+      </div>
+      <!-- End Section Title -->
       <div class="container">
         <div class="row gy-4">
           <!-- facilities 1 -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="card service-item  position-relative">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <a href="service-details.html" class="stretched-link">
-                <h3 class="text-danger">Home Tutoring Service</h3>
-              </a>
-              <p>We offer the best home tutoring services to cater to every student's unique learning needs. With highly
-                qualified tutors, personalized lesson plans, and a focus on academic excellence, we aim to help students
-                achieve their goals in the comfort of their own homes.</p>
+              <img class="card-img-top" src="assets/img/facilities/facilities1.jpg" alt="Card image cap">
+              <div class="mx-2">
+                <a href="service-details.html" class="stretched-link">
+                  <h3 class="text-danger">Home Tutoring Service</h3>
+                </a>
+                <p>We offer the best home tutoring services to cater to every student's unique learning needs. With
+                  highly
+                  qualified tutors, personalized lesson plans, and a focus on academic excellence, we aim to help
+                  students
+                  achieve their goals in the comfort of their own homes.</p>
+              </div>
             </div>
           </div><!-- End Service Item -->
 
           <!-- faclities 2 -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="card service-item position-relative">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <a href="service-details.html" class="stretched-link">
-                <h3 class="text-danger">Free Education Centre</h3>
-              </a>
-              <p>We are committed to making education accessible to all by providing free education to underprivileged
-                students in our society. Our initiative aims to empower needy students with knowledge and opportunities
-                for a brighter future.</p>
+              <img class="card-img-top" src="assets/img/facilities/facilities2.jpg" alt="Card image cap">
+              <div class="mx-2">
+                <a href="service-details.html" class="stretched-link">
+                  <h3 class="text-danger">Free Education Centre</h3>
+                </a>
+                <p>We are committed to making education accessible to all by providing free education to underprivileged
+                  students in our society. Our initiative aims to empower needy students with knowledge and
+                  opportunities
+                  for a brighter future.</p>
+              </div>
             </div>
           </div><!-- End Service Item -->
 
           <!-- facilities 3 -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="card service-item position-relative">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <a href="service-details.html" class="stretched-link">
-                <h3 class="text-danger">Empowering Growth Through Social
-                  & Creative Activities</h3>
-              </a>
-              <p>We organize a range of social and creative activities that foster positive values, creativity, and
-                personal development in students while contributing to a better, more harmonious society.</p>
+              <img class="card-img-top" src="assets/img/facilities/facilities3.jpg" alt="Card image cap">
+              <div class="mx-2">
+                <a href="service-details.html" class="stretched-link">
+                  <h3 class="text-danger">Empowering Growth Through Social
+                    & Creative Activities</h3>
+                </a>
+                <p>We organize a range of social and creative activities that foster positive values, creativity, and
+                  personal development in students while contributing to a better, more harmonious society.</p>
+              </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
+          <!-- End Service Item -->
+        </div>
+      </div>
+    </section>
+    <!-- /Services Section -->
+
+    <section id="students" class="testimonials section">
+      <!-- Section Title -->
+      <div class="container title mb-5 mx-auto text-center" data-aos="fade-up">
+        <h2 class="fw-bolder text-danger">Our Students</h2>
+      </div><!-- End Section Title -->
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 10
+                    }
+                  }
+                }
+              </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide mx-auto">
+              <div class="col-sm-3 mx-auto">
+                <img src="assets/img/stuents/1.jpg" class="testimonial-img" alt="" style="height: 300px !important;">
+                <p class="row bg-danger mx-auto" style="width: 260px;">
+                  students achievement
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide mx-auto">
+              <div class="col-sm-3 mx-auto" style="height: 300px !important;">
+                <img src="assets/img/stuents/2.jpg" class="testimonial-img" alt="" style="height: 300px !important;">
+                <p class="row bg-danger mx-auto" style="width: 260px;">
+                  students achievement
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide mx-auto">
+              <div class="col-sm-3 mx-auto" style="height: 300px !important;">
+                <img src="assets/img/stuents/3.jpg" class="testimonial-img" alt="" style="height: 300px !important;">
+                <p class="row bg-danger mx-auto" style="width: 260px;">
+                  students achievement
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide mx-auto">
+              <div class="col-sm-3 mx-auto" style="height: 300px !important;">
+                <img src="assets/img/stuents/4.jpg" class="testimonial-img" alt="" style="height: 300px !important;">
+                <p class="row bg-danger mx-auto" style="width: 260px;">
+                  students achievement
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide mx-auto">
+              <div class="col-sm-3 mx-auto" style="height: 300px !important;">
+                <img src="assets/img/stuents/5.jpg" class="testimonial-img" alt="" style="height: 300px !important;">
+                <p class="row bg-danger mx-auto" style="width: 260px;">
+                  students achievement
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section><!-- /Testimonials Section -->
 
 
 
 
+
+    <!-- Team Section -->
+
+    <!-- /Team Section -->
+
+
+    <section class="container-fluid bg-danger">
+      <h2 class="text-white text-center fw-bolder fs-1">Our Achievement</h2>
+      <div class="row bg-white container mx-auto text-center text-danger fw-bolder">
+        <div class="col-sm-4">
+          <div class="row">
+            Kristhi Sarad
+            Sanman - 2024
+          </div>
+          <div class="row">
+            <img src="assets/img/achievement/achieve1.jpg" alt="">
+          </div>
         </div>
 
+        <div class="col-sm-4">
+          <div class="row">
+            Recognised by
+            Kalpajyoti Foundation
+          </div>
+          <div class="row">
+            <img src="assets/img/achievement/achieve2.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="row">
+            Recognised by
+            MSME
+          </div>
+          <div class="row">
+            <img src="assets/img/achievement/achieve1.jpg" alt="">
+          </div>
+
+        </div>
       </div>
+    </section>
 
-    </section><!-- /Services Section -->
+    <!-- Pricing Section -->
+<section id="pricing" class="pricing">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Pricing</h2>
+    <p>What they are saying about us</p>
+  </div><!-- End Section Title -->
+  <div class="container">
 
-    <!-- Recent Posts Section -->
-    <section id="recent-posts" class="recent-posts section">
-      <!-- Section Title -->
-      <div class="container mx-auto text-center section-title" data-aos="fade-up">
-        <h2 class="text-danger">Students</h2>
-        <p class="text-danger">Our Students<br></p>
-      </div><!-- End Section Title -->
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <article>
-              <div class="member-img">
-                <img src="assets/img/stuents/1.jpg" alt="" class="img-fluid">
-              </div>
-              <h2 class="title">
+    <div class="row gy-3">
 
-              </h2>
-            </article>
-          </div><!-- End post list item -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="pricing-item">
+          <h3>Free</h3>
+          <h4><sup>$</sup>0<span> / month</span></h4>
+          <ul>
+            <li>Aida dere</li>
+            <li>Nec feugiat nisl</li>
+            <li>Nulla at volutpat dola</li>
+            <li class="na">Pharetra massa</li>
+            <li class="na">Massa ultricies mi</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div><!-- End Pricing Item -->
 
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <article>
-              <div class="member-img" style="height: 160px;">
-                <img src="assets/img/stuents/2.jpg" alt="" class="img-fluid">
-              </div>
-              <h2 class="title">
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="pricing-item featured">
+          <h3>Business</h3>
+          <h4><sup>$</sup>19<span> / month</span></h4>
+          <ul>
+            <li>Aida dere</li>
+            <li>Nec feugiat nisl</li>
+            <li>Nulla at volutpat dola</li>
+            <li>Pharetra massa</li>
+            <li class="na">Massa ultricies mi</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div><!-- End Pricing Item -->
 
-              </h2>
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="pricing-item">
+          <h3>Developer</h3>
+          <h4><sup>$</sup>29<span> / month</span></h4>
+          <ul>
+            <li>Aida dere</li>
+            <li>Nec feugiat nisl</li>
+            <li>Nulla at volutpat dola</li>
+            <li>Pharetra massa</li>
+            <li>Massa ultricies mi</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div><!-- End Pricing Item -->
 
-            </article>
-          </div><!-- End post list item -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="pricing-item">
+          <span class="advanced">Advanced</span>
+          <h3>Ultimate</h3>
+          <h4><sup>$</sup>49<span> / month</span></h4>
+          <ul>
+            <li>Aida dere</li>
+            <li>Nec feugiat nisl</li>
+            <li>Nulla at volutpat dola</li>
+            <li>Pharetra massa</li>
+            <li>Massa ultricies mi</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div><!-- End Pricing Item -->
 
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <article>
-              <div class="member-img" style="height: 160px;">
-                <img src="assets/img/stuents/3.jpg" alt="" class="img-fluid">
-              </div>
-              <h2 class="title">
+    </div>
 
-              </h2>
-            </article>
-          </div><!-- End post list item -->
-
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <article>
-              <div class="member-img" style="height: 160px;">
-                <img src="assets/img/stuents/4.jpg" alt="" class="img-fluid">
-              </div>
-              <h2 class="title">
-
-              </h2>
-            </article>
-          </div><!-- End post list item -->
-
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <article>
-              <div class="member-img" style="height: 160px;">
-                <img src="assets/img/stuents/5.jpg" alt="" class="img-fluid">
-              </div>
-              <h2 class="title">
-
-              </h2>
-            </article>
-          </div><!-- End post list item -->
-
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <article>
-              <div class="member-img" style="height: 160px;">
-                <img src="assets/img/stuents/6.jpg" alt="" class="img-fluid">
-              </div>
-              <h2 class="title">
-
-              </h2>
-            </article>
-          </div><!-- End post list item -->
-
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <article>
-              <div class="member-img" style="height: 160px;">
-                <img src="assets/img/stuents/7.jpg" alt="" class="img-fluid">
-              </div>
-              <h2 class="title">
-
-              </h2>
-            </article>
-          </div><!-- End post list item -->
-
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <article>
-              <div class="member-img" style="height: 160px;">
-                <img src="assets/img/stuents/8.jpg" alt="" class="img-fluid">
-              </div>
-              <h2 class="title">
-
-              </h2>
-            </article>
-          </div><!-- End post list item -->
-
-        </div><!-- End recent posts list -->
-
-
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <article>
-            <div class="member-img" style="height: 160px;">
-              <img src="assets/img/stuents/9.jpg" alt="" class="img-fluid">
-            </div>
-            <h2 class="title">
-
-            </h2>
-          </article>
-        </div><!-- End post list item -->
-
-      </div><!-- End recent posts list -->
-
-      </div>
-
-    </section><!-- /Recent Posts Section -->
-
-
-    <!-- Testimonials Section -->
-
-
+  </div>
+</section>
+<!-- /Pricing Section -->
   </main>
 
   <footer id="footer" class="footer white-background">
@@ -616,7 +695,7 @@
         </div>
 
         <div class="col-lg-3">
-          <h4 class="text-danger">
+          <h4 class="text-danger text-xl-start">
             Contact Information
           </h4>
           <h5>86638854460</h5>
@@ -630,14 +709,14 @@
           <h4 class="text-danger">
             Address
           </h4>
-          <h5>W.No-12, Rabindra Pally, 
+          <h5>W.No-12, Rabindra Pally,
 
             Dhubri, Assam, India.</h5>
         </div>
 
         <div class="col-lg-3">
           <h4 class="text-danger">
-            Social Media: 
+            Social Media:
           </h4>
           <div class="social-links d-flex justify-content-center">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -649,11 +728,12 @@
         </div>
 
       </div>
-      
-      
+
+
       <div class="container-fluid footer dark-background">
         <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Offcampus Education</strong> <span>All Rights Reserved</span>
+          <span>Copyright</span> <strong class="px-1 sitename">Offcampus Education</strong> <span>All Rights
+            Reserved</span>
         </div>
         <div class="credits">
           Designed by <a href="">Mizanur Islam</a>
@@ -671,7 +751,7 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
