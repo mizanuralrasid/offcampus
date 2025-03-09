@@ -1,21 +1,11 @@
 /**
-* Template Name: Selecao
-* Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
-:root {
+/* :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
-}
+} */
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
@@ -62,7 +52,7 @@
 --------------------------------------------------------------*/
 body {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-image: linear-gradient(rgba(184, 247, 184, 0.648),rgba(170, 170, 223, 0.694));
   font-family: var(--default-font);
 }
 
@@ -177,6 +167,64 @@ h6 {
 .scrolled .header {
   --background-color: rgba(42, 44, 57, 0.9);
 }
+
+
+/* team keyframes scrolling */
+.team1{
+  animation: team1 20s linear infinite;
+}
+
+@keyframes team1 {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  height: 250px;
+  overflow-x: hidden;
+}
+
+.slide{
+  background: #fdfdfdef;
+  width: 160px;
+  height: 200px !important;
+  margin: 3px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.slide img{
+  height: 90%;
+  width: 100%;
+}
+.slide h4{
+  text-wrap: wrap;
+  font-size: 20px !important;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -620,7 +668,6 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
   padding: 60px 0;
   scroll-margin-top: 77px;
   overflow: clip;
@@ -668,10 +715,10 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  width: 100%;
+  width: 100% !important;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(0deg, var(--background-color) 0%, color-mix(in srgb, var(--background-color) 90%, white 10%) 100%);
+  background: linear-gradient(rgba(240, 171, 206, 0.312),rgba(124, 124, 255, 0.42));
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -1162,16 +1209,16 @@ section,
   background-color: var(--surface-color);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   box-sizing: content-box;
-  padding: 30px;
-  margin: 30px 15px;
   position: relative;
-  height: 100%;
+  height: 100px;
+  
 }
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
+  height: 90px !important;
   border-radius: 50px;
-  margin-right: 15px;
+  /* margin-right: 15px; */
 }
 
 .testimonials .testimonial-item h3 {
